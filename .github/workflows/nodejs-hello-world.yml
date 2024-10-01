@@ -25,9 +25,7 @@ jobs:
       run: npm install
 
     - name: Run the app
-      run: |
-        node index.js
-        sleep 5
+      run: node index.js &
     
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
